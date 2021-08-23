@@ -26,15 +26,22 @@ body{
 header{
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 
-header nav a{
+header #topnav #menu__toggle{
+    font-size: 40px;
+    color: white;
+    display: none;
+}
+
+header #topnav a{
     color: white;
     text-decoration: none;
     margin-left: 20px;
 }
 
-header nav a:hover{
+header #topnav a:hover{
     color: grey;
 }
 
@@ -76,4 +83,27 @@ footer{
     border-top: 2px dotted grey;
     border-bottom: 2px dotted grey;
     margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* mobile view */
+@media screen and (max-width: 1000px){
+    header #topnav a{
+        display: none;
+    }
+    header #topnav #menu__toggle{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #topnav.responsive{
+        position: relative;
+    }
+    #topnav.responsive #menu__toggle{
+        position: absolute;
+    }
+    #topnav.responsive a{
+        display: block;
+    }
 }
