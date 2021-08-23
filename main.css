@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.align-items{
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav a:hover{
+    color: grey;
+}
+
+.logo__pojok{
+    color: wheat;
+    font-weight: 400;
+}
+
+#header>div h1{
+    border-bottom: 2mm ridge rgb(189, 48, 48);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
